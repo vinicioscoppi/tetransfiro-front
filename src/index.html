@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Bare - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row col-md-12" style="margin-top: 20px; margin-bottom: 20px;">
+        <h1>Te transfiro!</h1>
+      </div>      
+      
+      <form class="fields">
+        <div class="form-row">
+          <div class="form-group col-md-3">
+            <label>Email</label>
+            <input type="email" class="form-control email" />
+          </div>
+          <div class="form-group col-md-3">
+            <label>Primeiro nome</label>
+            <input type="text" class="form-control firstName" />
+          </div>
+          <div class="form-group col-md-3">
+            <label>Último nome</label>
+            <input type="text" class="form-control lastName" />
+          </div>
+          <div class="form-group col-md-2">
+            <label for="values">Valores (use vírgula)</label>
+            <input
+              type="text"
+              class="form-control values"
+              placeholder="40.50, 2, 8.35"
+            />
+          </div>
+          <div class="form-group col-md-1">
+            <label style="opacity: 0;"> Adicionar</label>
+            <button type="button" class="btn btn-primary add-field">
+              ( + )
+            </button>
+          </div>
+        </div>
+        <hr />
+        <div class="form-row">
+            <div class="form-group col-md-2">
+                <label>Valor do Adicional</label>
+                <input type="text" class="form-control additional" />
+              </div>
+            <div class="form-group col-md-2">
+                <label style="opacity: 0;">Operador</label>
+                <select class="form-control operation">
+                  <option selected>PORCENTO</option>
+                  <option>REAIS</option>
+                </select>
+              </div>
+          <div class="form-group col-md-2">
+            <label style="opacity: 0;">Sinal</label>
+            <select class="form-control sign">
+              <option selected>DESCONTO</option>
+              <option>CUSTO</option>
+            </select>
+          </div>
+          <div class="form-group col-md-1">
+            <label style="opacity: 0;"> Adicionar</label>
+            <button type="button" class="btn btn-primary add-field2">
+              ( + )
+            </button>
+          </div>
+        </div>
+        <br>
+        <div class="form-row">
+          <button type="button" class="btn btn-primary" id="determine">Calcular</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
